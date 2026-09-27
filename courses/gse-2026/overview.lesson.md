@@ -95,12 +95,12 @@ L1 欢迎来到未来 ★框架层（给出全部判据）
 
 | 讲次 | 教案文件 | 点数 | 编号 | 状态 |
 |---|---|---|---|---|
-| L1 欢迎来到未来 | `gse-lecture-01.lesson.md` | 19 | `S1–S19` | ✅ 已备 |
-| L2 提示词与上下文工程 | `gse-lecture-02.lesson.md` | 15 | `T1–T15` | ✅ 已备 |
-| L3 版本管理 (1) | `gse-lecture-03.lesson.md` | 17 | `U1–U17` | ✅ 已备 |
-| L4 版本管理 (2) | `gse-lecture-04.lesson.md` | 14 | `V1–V14` | ✅ 已备 |
-| L5 软件工程的来龙去脉 | `gse-lecture-05.lesson.md` | 17 | `W1–W17` | ✅ 已备 |
-| L6 需求和架构 (1) | `gse-lecture-06.lesson.md` | 17 | `X1–X17` | ✅ 已备 |
+| L1 欢迎来到未来 | `01-welcome-to-the-future.lesson.md` | 19 | `S1–S19` | ✅ 已备 |
+| L2 提示词与上下文工程 | `02-prompt-and-context-engineering.lesson.md` | 15 | `T1–T15` | ✅ 已备 |
+| L3 版本管理 (1) | `03-version-control-1.lesson.md` | 17 | `U1–U17` | ✅ 已备 |
+| L4 版本管理 (2) | `04-version-control-2.lesson.md` | 14 | `V1–V14` | ✅ 已备 |
+| L5 软件工程的来龙去脉 | `05-where-se-came-from.lesson.md` | 17 | `W1–W17` | ✅ 已备 |
+| L6 需求和架构 (1) | `06-requirements-and-architecture-1.lesson.md` | 17 | `X1–X17` | ✅ 已备 |
 | Lab1 个人数字助手 | 已并入 L4 §V14 与迁移题 | — | — | ✅ |
 | （补充片）失败的 AI Slop 数字永生尝试（2 分钟） | 并入 L1 §二维码 Excel 作实例 | — | — | ⏳ |
 
@@ -254,7 +254,7 @@ L6 的「几行代码也有架构」+「让下一次需求变化有地方可去�
 
 1. 跑 `scripts/batch_lectures.sh` 取该讲数据
 2. 取讲义：`curl https://jyywiki.cn/GSE/2026/lectN.md`，用 `extract_wiki.py` 抽正文
-3. 按 备课规范 切原子点、填 11 字段 → 写 `gse-lecture-0N.lesson.md`
+3. 按 备课规范 切原子点、填 11 字段 → 写 `0N-<英文短名>.lesson.md`
 4. **回到本文件改三处**（只改这三处，别重写）：
    - §2 依赖图：加节点
    - §5 知识点总索引：加一行
