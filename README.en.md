@@ -2,23 +2,26 @@
 
 [中文](README.md) | **English**
 
-> Turning courses, talks and video series into **teachable, testable, traceable** lesson plans.
-> Every knowledge point comes with pre-test questions, exercises, answers, common
-> misconceptions and mastery criteria — not a course summary.
+> Turning courses, talks, video series and **books** into **teachable, testable, traceable**
+> lesson plans. Every knowledge point comes with pre-test questions, exercises, answers,
+> common misconceptions and mastery criteria — not a course summary.
 
 ⚠️ Each lesson plan is a **derivative work** of its source material and follows that
-source's license (usually CC BY-NC 4.0). **Attribution and licensing are listed per course.**
-See [NOTICE.md](NOTICE.md).
+source's license. **Attribution and licensing are listed per plan.** See [NOTICE.md](NOTICE.md).
 
 ---
 
-## Courses
+## Contents
 
-| Course | Source | Lectures | Points | License | Directory |
-|---|---|---|---|---|---|
-| **Generative Software Engineering** | Nanjing University, Fall 2026 · Yanyan Jiang | 6 | 99 | CC BY-NC 4.0 | [`courses/gse-2026/`](courses/gse-2026/) |
+| Lesson plan | Material | Size | License | Directory |
+|---|---|---|---|---|
+| **Generative Software Engineering** | Video course · Nanjing University, Fall 2026 · Yanyan Jiang (6 lectures) | 99 points | CC BY-NC 4.0 | [`courses/gse-2026/`](courses/gse-2026/) |
+| **A Philosophy of Software Design** | Book · John Ousterhout (2nd ed.) | 18 points | ⚠️ Commercial book<br>(paraphrase + short quotes) | [`courses/aposd/`](courses/aposd/) |
 
-<!-- When adding a course, add a row here and create a directory under courses/ -->
+> ⚠️ **The two have different licenses.** The `gse-2026` source is CC BY-NC 4.0
+> (share and adapt freely, no commercial use). The `aposd` source is a **commercial book,
+> all rights reserved** — this library only **paraphrases and briefly quotes** it, and the
+> lesson plan **cannot replace the book**. See each directory's `README.md`.
 
 ## The format
 
@@ -55,14 +58,18 @@ Turning material into questions is what makes learning actually happen.
 4. For anything the material doesn't settle, read the **gap summary** — those are
    explicitly marked boundaries, not omissions.
 
-## Adding a course
+## Adding a lesson plan
 
 1. Copy [`TEMPLATE.lesson.md`](TEMPLATE.lesson.md) and fill in the 11 fields
-2. Create `courses/<slug>-<year>/` with the lesson plans plus a course `README.md`
-   (containing **that course's own attribution and license**)
+2. Create `courses/<slug>[-<year>]/` with the lesson plan plus a `README.md` for that
+   directory (**containing that material's own attribution and license**)
 3. Update the table above and the attribution table in `NOTICE.md`
-4. For a multi-lecture course, also write an `overview.lesson.md`
+4. For a multi-lecture course (or a multi-chapter book), also write an `overview.lesson.md`
    (the pattern is described at the end of the template)
+
+> **When the material is a book**: the license is usually "all rights reserved", so
+> **only paraphrase and briefly quote** — never reproduce large passages — and state in that
+> directory's `README.md` that the lesson plan cannot replace the book.
 
 **Pipeline** (full version in the template):
 
